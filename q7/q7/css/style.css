@@ -1,1 +1,39 @@
 @charset "UTF-8";
+
+.speech-bubble {
+  margin: auto;
+  position:relative;
+  background: #fad296;
+  width: 500px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 5px solid #8f5a0a;
+  line-height: 16px;
+  padding: 20px;
+}
+
+.speech-bubble::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  left: 30px;
+  bottom: -25px;
+  border-top: 20px solid #8f5a0a;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+.speech-bubble::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 30px;
+  bottom: -18px;
+  border-top: 20px solid #fad296;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
